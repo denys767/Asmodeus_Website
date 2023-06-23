@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    transition: 1.2s;
+    filter: brightness(40%);
+    filter: blur(3px);
+    width: 100vw;
+    height: 100vh;
+    
+}
