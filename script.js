@@ -28,5 +28,5 @@ function slideBackground() {
     }
 
 }
-//developed by goritpukan
+//developed by goritpukan and Rediska555
 slideBackground();
