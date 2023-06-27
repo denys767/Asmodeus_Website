@@ -1,0 +1,31 @@
+{
+  "name": "asmodeus-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denys767/Asmodeus_Website.git"
+  },
+  "keywords": [
+    "js",
+    "html",
+    "css",
+    "google_pay",
+    "steam_api",
+    "parcel"
+  ],
+  "author": "Rediska555 && goritpukan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denys767/Asmodeus_Website/issues"
+  },
+  "homepage": "https://github.com/denys767/Asmodeus_Website#readme",
+  "devDependencies": {
+    "parcel": "^2.9.2"
+  }
+}
