@@ -1,0 +1,63 @@
+@import 'fonts.scss';
+@import 'colors.scss';
+@import 'header.scss';
+
+$image: url(../images/scp-939.png);
+
+// main {
+//     background-size: cover;
+//     background: $image;
+//     min-width: 50vw;
+//     min-height: 50vh;
+//     background-size: cover;
+//     transform: scale(1.1);
+//     background-attachment: fixed;
+// }
+body {
+    font-family: 'Montserrat'
+}
+
+@media screen and (max-width: 800px) {
+    .header-wrapper-title {
+        transition: 0.5s;
+        font-size: 55px;
+    }
+    .header-wrapper-subtitle {
+        transition: 0.5s;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .header-wrapper-title {
+        transition: 0.5s;
+    }
+    .header-wrapper-subtitle {
+        transition: 0.5s;
+    }
+}
+
+.header-wrapper {
+    transition: 0.5s;
+    display: flex;
+    gap: 17vh;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-image: $image;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-title {
+        @extend %heading-1;
+        text-align: center;
+        color: $natural-white;
+    }
+
+    &-subtitle {
+        @extend %heading-3;
+        text-align: center;
+        color: $natural-white;
+    }
+}
