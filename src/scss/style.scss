@@ -1,6 +1,7 @@
 @import 'fonts.scss';
 @import 'colors.scss';
 @import 'header.scss';
+@import 'about-us.scss';
 
 $image: url(../images/scp-939.png);
 
@@ -17,7 +18,8 @@ body {
     font-family: 'Montserrat'
 }
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 580px) {
     .header-wrapper-title {
         transition: 0.5s;
         font-size: 55px;
@@ -28,7 +30,26 @@ body {
     }
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 581px) {
+    .header-wrapper-title {
+        transition: 0.5s;
+    }
+    .header-wrapper-subtitle {
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .ip {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 581px) {
     .header-wrapper-title {
         transition: 0.5s;
     }
@@ -39,11 +60,11 @@ body {
 
 .header-wrapper {
     transition: 0.5s;
-    display: flex;
+    display: grid;
+    place-items: center;
     gap: 17vh;
-    flex-direction: column;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-image: $image;
     background-attachment: fixed;
     background-position: center;
@@ -60,4 +81,9 @@ body {
         text-align: center;
         color: $natural-white;
     }
+}
+
+.header-wrapper-title_wrapper {
+    position: relative;
+    bottom: 10vh;
 }
