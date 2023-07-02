@@ -1,0 +1,104 @@
+.header {
+    z-index: 100;
+    display: flex;
+    gap: 10vw;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    backdrop-filter: blur(4rem);
+    position: fixed;
+}
+
+.logo_link {
+    margin: 2vh;
+    position: relative;
+    height: 12vh;
+    min-width: 12vh;
+    background: url(../images/AsmodeusLogo.png);
+    background-size: cover;
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.logo_link:hover {
+    transform: scale(1.08);
+}
+
+%header-title {
+    // position: relative;
+    // top: 5;
+    // height: 12vh;
+    // width: 12vh;
+    color: $natural-white;
+}
+
+
+
+.header-title {
+    --c: #fc0303; /* the color */
+    --s: .15em;
+    
+    line-height:1.1em;
+    padding-bottom: calc(2.1*var(--s));
+    background: 
+      linear-gradient(from 135deg at top,var(--c) 90deg,#0000 0) 
+        left 0 bottom var(--s)/calc(2*var(--s)) var(--s) repeat-x,
+      linear-gradient(from -45deg at bottom,var(--c) 90deg,#0000 0) 
+        left var(--s) bottom 0/calc(2*var(--s)) var(--s) repeat-x;
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0) 0/var(--_p,0%) padding-box no-repeat;
+    transition: .5s;
+  }
+
+  .header-title:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fc0303;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .header-title:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    --_p: 100%;
+    color: var(--c);
+  }
+
+  .header-title:hover {
+    --_p: 100%;
+    color: var(--c);
+  }
+
+
+.plugins {
+    position: relative;
+    right: 150;
+    @extend %heading-3;
+    @extend %header-title;}
+
+.donations {
+    position: relative;
+    right: 150;
+    @extend %heading-3;
+    @extend %header-title;}
+
+.line {
+    margin-left: 50;
+    position: relative;
+    top: 5;
+    right: 90;
+}
+
+.ip {
+    position: relative;
+    right: 150;
+    @extend %heading-3;
+    @extend %header-title;
+}
