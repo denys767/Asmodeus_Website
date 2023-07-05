@@ -4,9 +4,49 @@
     gap: 10vw;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     width: 100%;
     backdrop-filter: blur(4rem);
     position: fixed;
+    &-title {
+      transition: 0.5s;
+      color: $natural-white;
+      cursor: pointer;
+      // text-decoration: no ne;
+      // --c: #fc0303; /* the color */
+      // --s: .15em;
+      
+      // line-height:1.1em;
+      // padding-bottom: calc(2.1*var(--s));
+      // background: 
+      //   linear-gradient(from 135deg at top,var(--c) 90deg,#0000 0) 
+      //     left 0 bottom var(--s)/calc(2*var(--s)) var(--s) repeat-x,
+      //   linear-gradient(from -45deg at bottom,var(--c) 90deg,#0000 0) 
+      //     left var(--s) bottom 0/calc(2*var(--s)) var(--s) repeat-x;
+      // -webkit-mask:
+      //   linear-gradient(#000 0 0) content-box,
+      //   linear-gradient(#000 0 0) 0/var(--_p,0%) padding-box no-repeat;
+      // transition: .5s;  
+    // &-title:after {
+    //   content: '';
+    //   position: absolute;
+    //   width: 100%;
+    //   transform: scaleX(0);
+    //   height: 2px;
+    //   bottom: 0;
+    //   left: 0;
+    //   background-color: #fc0303;
+    //   transform-origin: bottom right;
+    //   transition: transform 0.25s ease-out;  
+    // }
+    }
+
+    &-title:hover {
+      color: #ffffff;
+      text-shadow: 0 0 5px #f2626f,
+                  0 0 25px #fc0303,
+                  0 0 50px #f2626f,
+                  0 0 100px #fc0303;    }
 }
 
 .logo_link {
@@ -32,62 +72,17 @@
     color: $natural-white;
 }
 
-
-
-.header-title {
-    --c: #fc0303; /* the color */
-    --s: .15em;
-    
-    line-height:1.1em;
-    padding-bottom: calc(2.1*var(--s));
-    background: 
-      linear-gradient(from 135deg at top,var(--c) 90deg,#0000 0) 
-        left 0 bottom var(--s)/calc(2*var(--s)) var(--s) repeat-x,
-      linear-gradient(from -45deg at bottom,var(--c) 90deg,#0000 0) 
-        left var(--s) bottom 0/calc(2*var(--s)) var(--s) repeat-x;
-    -webkit-mask:
-      linear-gradient(#000 0 0) content-box,
-      linear-gradient(#000 0 0) 0/var(--_p,0%) padding-box no-repeat;
-    transition: .5s;
-  }
-
-  .header-title:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #fc0303;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-
-  .header-title:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    --_p: 100%;
-    color: var(--c);
-  }
-
-  .header-title:hover {
-    --_p: 100%;
-    color: var(--c);
-  }
-
-
 .plugins {
     position: relative;
-    right: 150;
     @extend %heading-3;
-    @extend %header-title;}
+    @extend %header-title;
+  }
 
 .donations {
     position: relative;
-    right: 150;
     @extend %heading-3;
-    @extend %header-title;}
+    @extend %header-title;
+  }
 
 .line {
     margin-left: 50;
@@ -98,7 +93,25 @@
 
 .ip {
     position: relative;
-    right: 150;
+    right: 170;
     @extend %heading-3;
     @extend %header-title;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.donation_button {
+  @extend %heading-3;
+  @extend %header-title;
+  position: relative;
+  background: white;
+  right: 170;
+  width: 6vw;
+  height: 12vh;
+  border-color: $natural-white;
+  color: $natural-white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

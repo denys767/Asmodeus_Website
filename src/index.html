@@ -15,23 +15,35 @@
 
 <body>
     <div class="header">
-            <a class="logo_link" href="https://discord.com/invite/xWaNnvZKQg"></a>
-            <a class="header-title plugins">Плагіни</a>
-            <a class="header-title donations">Донати</a>
-            <img class="line" src="./images/Line 1.png" alt="">
-            <a class="header-title ip">IP:57.128.198.11:7777</a>
-            <div class="donation_button"></div>
+        <a class="logo_link" href="https://discord.com/invite/xWaNnvZKQg"></a>
+        <a href="plugins" class="header-title plugins">Плагіни</a>
+        <a class="header-title donations">Донати</a>
+        <img class="line" src="./images/Line 1.png" alt="">
+        <a href="#about-us" class="header-title ip">IP:57.128.198.11:7777</a>
+        <!-- <div class="donation_button">Login</div> -->
 
     </div>
     <div class="header-wrapper">
         <div class="header-wrapper-title_wrapper">
-            <p class="header-wrapper-title">Asmodeus Project</p>
+            <a href="https://discord.com/invite/xWaNnvZKQg" class="header-wrapper-title">Asmodeus Project</a>
             <p class="header-wrapper-subtitle">На колінці, але з душею!</p>
         </div>
     </div>
-    <div class="about-us">
-
+    <div id="about-us" class="about-us">
+        <div  class="about-us-wrapper">
+            <h1 class="about-us-title">Про нас</h1>
+            <p class="about-us-subtitle">Asmodeus Project - стрибок вперед в світі українських
+                серверів SCP: Secret Labaratory! <br>
+                <br>
+                Ми працюємо кожного дня над покращенням геймплею та над розвитком нашої прекрасної спільноти.
+            </p>
+        </div>
     </div>
-    <script src="./js/script.js"></script>
+    <div class="plugins" id="plugins">
+        <h1 class="about-us-title">Плагіни</h1>
+        <p class="about-us-subtitle">Work In Progress</p>
+    </div>
+    <script type="module" src="./js/script.js"></script>
 </body>
+
 </html>

@@ -2,6 +2,7 @@
 @import 'colors.scss';
 @import 'header.scss';
 @import 'about-us.scss';
+@import 'plugins.scss';
 
 $image: url(../images/scp-939.png);
 
@@ -71,10 +72,20 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     &-title {
+        text-decoration: none;
         @extend %heading-1;
         text-align: center;
         color: $natural-white;
+        cursor: pointer;
     }
+
+    &-title:hover {
+        color: #fff;
+        text-shadow: 0 0 5px #f2626f,
+                    0 0 25px #fc0303,
+                    0 0 50px #f2626f,
+                    0 0 100px #fc0303;
+      }
 
     &-subtitle {
         @extend %heading-3;
