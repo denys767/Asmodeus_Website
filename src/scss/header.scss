@@ -1,32 +1,41 @@
 .header {
-    z-index: 100;
-    display: flex;
-    gap: 10vw;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    backdrop-filter: blur(4rem);
-    position: fixed;
-    &-title {
-      transition: 0.5s;
-      color: $natural-white;
-      cursor: pointer;
-      // text-decoration: no ne;
-      // --c: #fc0303; /* the color */
-      // --s: .15em;
-      
-      // line-height:1.1em;
-      // padding-bottom: calc(2.1*var(--s));
-      // background: 
-      //   linear-gradient(from 135deg at top,var(--c) 90deg,#0000 0) 
-      //     left 0 bottom var(--s)/calc(2*var(--s)) var(--s) repeat-x,
-      //   linear-gradient(from -45deg at bottom,var(--c) 90deg,#0000 0) 
-      //     left var(--s) bottom 0/calc(2*var(--s)) var(--s) repeat-x;
-      // -webkit-mask:
-      //   linear-gradient(#000 0 0) content-box,
-      //   linear-gradient(#000 0 0) 0/var(--_p,0%) padding-box no-repeat;
-      // transition: .5s;  
+  z-index: 100;
+  // display: flex;
+  // gap: 10vw;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: center;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.3fr 1fr 1fr 10px 1fr;
+  align-items: center;
+  justify-items: center;
+
+  width: 100%;
+  max-height: 15%;
+  backdrop-filter: blur(4rem);
+  position: fixed;
+
+  &-title {
+    transition: 0.5s;
+    color: $natural-white;
+    cursor: pointer;
+    // text-decoration: no ne;
+    // --c: #fc0303; /* the color */
+    // --s: .15em;
+
+    // line-height:1.1em;
+    // padding-bottom: calc(2.1*var(--s));
+    // background: 
+    //   linear-gradient(from 135deg at top,var(--c) 90deg,#0000 0) 
+    //     left 0 bottom var(--s)/calc(2*var(--s)) var(--s) repeat-x,
+    //   linear-gradient(from -45deg at bottom,var(--c) 90deg,#0000 0) 
+    //     left var(--s) bottom 0/calc(2*var(--s)) var(--s) repeat-x;
+    // -webkit-mask:
+    //   linear-gradient(#000 0 0) content-box,
+    //   linear-gradient(#000 0 0) 0/var(--_p,0%) padding-box no-repeat;
+    // transition: .5s;  
     // &-title:after {
     //   content: '';
     //   position: absolute;
@@ -39,65 +48,70 @@
     //   transform-origin: bottom right;
     //   transition: transform 0.25s ease-out;  
     // }
-    }
+  }
 
-    &-title:hover {
-      color: #ffffff;
-      text-shadow: 0 0 5px #f2626f,
-                  0 0 25px #fc0303,
-                  0 0 50px #f2626f,
-                  0 0 100px #fc0303;    }
+  &-title:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px #f2626f,
+      0 0 25px #fc0303,
+      0 0 50px #f2626f,
+      0 0 100px #fc0303;
+  }
 }
 
 .logo_link {
-    margin: 2vh;
-    position: relative;
-    height: 12vh;
-    min-width: 12vh;
-    background: url(../images/AsmodeusLogo.png);
-    background-size: cover;
-    transition: 0.3s;
-    z-index: 100;
+  margin-left: 2vh;
+  justify-self: start;
+  position: relative;
+  height: 90%;
+  aspect-ratio: 1/1;
+  background: url(../images/AsmodeusLogo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transition: 0.3s;
+  z-index: 100;
 }
 
 .logo_link:hover {
-    transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 %header-title {
-    // position: relative;
-    // top: 5;
-    // height: 12vh;
-    // width: 12vh;
-    color: $natural-white;
+  // position: relative;
+  // top: 5;
+  // height: 12vh;
+  // width: 12vh;
+  color: $natural-white;
 }
 
 .plugins {
-    position: relative;
-    @extend %heading-3;
-    @extend %header-title;
-  }
+  position: relative;
+  @extend %heading-3;
+  @extend %header-title;
+}
 
 .donations {
-    position: relative;
-    @extend %heading-3;
-    @extend %header-title;
-  }
+  position: relative;
+  @extend %heading-3;
+  @extend %header-title;
+}
 
 .line {
-    margin-left: 50;
-    position: relative;
-    top: 5;
-    right: 90;
+  // margin-left: 50;
+  position: relative;
+  margin-top: 9px;
+  // top: 5;
+  // right: 90;
 }
 
 .ip {
-    position: relative;
-    right: 170;
-    @extend %heading-3;
-    @extend %header-title;
-    text-decoration: none;
-    transition: 0.5s;
+  position: relative;
+  // right: 170;
+  @extend %heading-3;
+  @extend %header-title;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
 .donation_button {
