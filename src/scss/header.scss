@@ -74,6 +74,7 @@
 
 .plugins {
     position: relative;
+    text-decoration: none;
     @extend %heading-3;
     @extend %header-title;
   }

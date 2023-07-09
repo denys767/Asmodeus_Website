@@ -2,7 +2,7 @@
 @import 'colors.scss';
 @import 'header.scss';
 @import 'about-us.scss';
-@import 'plugins.scss';
+@import 'plugins-module.scss';
 
 $image: url(../images/scp-939.png);
 
@@ -95,6 +95,5 @@ body {
 }
 
 .header-wrapper-title_wrapper {
-    position: relative;
-    bottom: 10vh;
+
 }
