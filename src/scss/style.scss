@@ -3,18 +3,10 @@
 @import 'header.scss';
 @import 'about-us.scss';
 @import 'plugins-module.scss';
+@import 'donations-module.scss';
 
 $image: url(../images/scp-939.png);
 
-// main {
-//     background-size: cover;
-//     background: $image;
-//     min-width: 50vw;
-//     min-height: 50vh;
-//     background-size: cover;
-//     transform: scale(1.1);
-//     background-attachment: fixed;
-// }
 body {
     font-family: 'Montserrat';
 }
@@ -40,38 +32,23 @@ body {
     }
 }
 
-@media screen and (max-width: 880px) {
-    .ip {
-        display: none;
-    }
-
-    .line {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 881px) {
-    .header-wrapper-title {
-        transition: 0.5s;
-    }
-    .header-wrapper-subtitle {
-        transition: 0.5s;
-    }
-}
-
 .header-wrapper {
     transition: 0.5s;
     display: grid;
+    overflow-wrap: break-word;
+
     place-items: center;
     gap: 17vh;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: $image;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     &-title {
+        overflow-wrap: break-word;
+
         text-decoration: none;
         @extend %heading-1;
         text-align: center;
@@ -80,6 +57,8 @@ body {
     }
 
     &-title:hover {
+        overflow-wrap: break-word;
+
         color: #fff;
         text-shadow: 0 0 5px #f2626f,
                     0 0 25px #fc0303,

@@ -3,6 +3,8 @@
     display: flex;
     gap: 10vw;
     flex-direction: row;
+    min-height: 12vh;
+    // overflow-wrap: break-word;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -12,33 +14,6 @@
       transition: 0.5s;
       color: $natural-white;
       cursor: pointer;
-      // text-decoration: no ne;
-      // --c: #fc0303; /* the color */
-      // --s: .15em;
-      
-      // line-height:1.1em;
-      // padding-bottom: calc(2.1*var(--s));
-      // background: 
-      //   linear-gradient(from 135deg at top,var(--c) 90deg,#0000 0) 
-      //     left 0 bottom var(--s)/calc(2*var(--s)) var(--s) repeat-x,
-      //   linear-gradient(from -45deg at bottom,var(--c) 90deg,#0000 0) 
-      //     left var(--s) bottom 0/calc(2*var(--s)) var(--s) repeat-x;
-      // -webkit-mask:
-      //   linear-gradient(#000 0 0) content-box,
-      //   linear-gradient(#000 0 0) 0/var(--_p,0%) padding-box no-repeat;
-      // transition: .5s;  
-    // &-title:after {
-    //   content: '';
-    //   position: absolute;
-    //   width: 100%;
-    //   transform: scaleX(0);
-    //   height: 2px;
-    //   bottom: 0;
-    //   left: 0;
-    //   background-color: #fc0303;
-    //   transform-origin: bottom right;
-    //   transition: transform 0.25s ease-out;  
-    // }
     }
 
     &-title:hover {
@@ -81,20 +56,16 @@
 
 .donations {
     position: relative;
+    text-decoration: none;
     @extend %heading-3;
     @extend %header-title;
   }
 
 .line {
-    margin-left: 50;
-    position: relative;
-    top: 5;
-    right: 90;
+  margin-top: 7;
 }
 
 .ip {
-    position: relative;
-    right: 170;
     @extend %heading-3;
     @extend %header-title;
     text-decoration: none;
