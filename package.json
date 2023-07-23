@@ -1,35 +1,29 @@
 {
-  "name": "asmodeus-project",
+  "dependencies": {
+    "parcel": "^2.9.3"
+  },
+  "name": "asmodeus_website",
+  "description": "Установка: 1. npm install",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "main": "index.js",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "node-fetch": "^3.3.1"
+  },
   "scripts": {
-    "start": "npx parcel src/index.html",
-    "build": "npx parcel build src/index.html"
+    "start": "npx parcel src/index.html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/denys767/Asmodeus_Website.git"
   },
-  "keywords": [
-    "js",
-    "html",
-    "css",
-    "google_pay",
-    "steam_api",
-    "parcel"
-  ],
   "author": "Rediska555 && goritpukan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/denys767/Asmodeus_Website/issues"
   },
-  "homepage": "https://github.com/denys767/Asmodeus_Website#readme",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.9.3",
-    "sass": "^1.63.6"
-  },
-  "dependencies": {
-    "parcel": "^2.9.3"
-  }
+  "homepage": "https://github.com/denys767/Asmodeus_Website#readme"
 }

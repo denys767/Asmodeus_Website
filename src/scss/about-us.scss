@@ -1,5 +1,28 @@
 .about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: $natural-black;
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30;
+        transition: 0.5s;
+    }
+    &-title {
+        @extend %heading-1;
+        text-transform: none !important;
+        color: $natural-white;
+        text-align: left;
+    }
+
+    &-subtitle {
+        @extend %heading-2;
+        text-transform: none !important;
+        color: $natural-white;
+        text-align: left;
+    }
+
 }

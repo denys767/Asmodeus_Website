@@ -1,32 +1,21 @@
-// const IMAGES = [new URL ("../images/Asmodeus.png", import.meta.url), new URL ("../images/corpse_1.png", import.meta.url), new URL ("../images/corpse_2.png", import.meta.url)];
-// let index = 0;
+const NoRules_count = document.querySelector('#NoRules');
+const PVP_count = document.querySelector('#PVP');
+const loader = document.querySelector('#loader');
 
-// const main = document.querySelector("main");
+NoRules_count.textContent = '⌛ Гравців'
+PVP_count.textContent = '⌛  Гравців'
 
-// const INTERVAL_TIME = 2500;
-// let interval = setInterval(slideBackground, INTERVAL_TIME);
+function FetchAPI() {
+    fetch('http://57.128.198.11:3000/')
+        .then(res => {
+            return res.json();
+        })
+        .then(res => {
+            console.log(res);
+            NoRules_count.textContent = res.Servers[0].Players + ' Гравців';
+            PVP_count.textContent = res.Servers[1].Players + ' Гравців';
+        })
+}
 
-// window.addEventListener("focus", () => {
-//     interval = setInterval(slideBackground, INTERVAL_TIME);
-// });
-// window.addEventListener("blur", () => {
-//     clearInterval(interval);
-//     interval = null;
-// });
-
-
-// function slideBackground() {
-//     index++;
-//     if (index <= IMAGES.length - 1) {
-//         main.style.opacity = 0;
-//         main.style.opacity = 1;
-//         main.style.backgroundImage = `url(${IMAGES[index]})`;
-
-//     } else {
-//         index = 0;
-//         main.style.backgroundImage = `url(${IMAGES[index]})`;
-//     }
-
-// }
-// //developed by goritpukan and Rediska555
-// slideBackground();
+FetchAPI();
+setInterval(FetchAPI, "12000");
