@@ -3,4 +3,4 @@
 
 
 Запуск:
-1. npm run startt
+1. npm run start
