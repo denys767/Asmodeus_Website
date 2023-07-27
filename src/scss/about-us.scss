@@ -1,10 +1,13 @@
 .about-us {
+
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background: $natural-black;
+    background: url(../images/corpse_2_blur.png);
+    background-attachment: fixed;
+    background-size: cover;
     &-wrapper {
         display: flex;
         flex-direction: column;

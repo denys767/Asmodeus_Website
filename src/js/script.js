@@ -18,4 +18,4 @@ function FetchAPI() {
 }
 
 FetchAPI();
-setInterval(FetchAPI, "12000");
+setInterval(FetchAPI, "25000");

@@ -3,7 +3,7 @@
     display: flex;
     gap: 10vw;
     flex-direction: row;
-    min-height: 12vh;
+    height: 10vh;
     // overflow-wrap: break-word;
     align-items: center;
     justify-content: center;
@@ -27,16 +27,17 @@
 .logo_link {
     margin: 2vh;
     position: relative;
-    height: 12vh;
-    min-width: 12vh;
+    height: 10vh;
+    min-width: 10vh;
     background: url(../images/AsmodeusLogo.png);
     background-size: cover;
     transition: 0.3s;
     z-index: 100;
+    text-decoration: none;
 }
 
 .logo_link:hover {
-    transform: scale(1.08);
+  transform: scale(0.93);;
 }
 
 %header-title {
@@ -63,6 +64,7 @@
 
 .line {
   margin-top: 7;
+  height: 10vh
 }
 
 .ip {

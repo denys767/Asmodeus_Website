@@ -36,7 +36,6 @@ body {
     transition: 0.5s;
     display: grid;
     overflow-wrap: break-word;
-
     place-items: center;
     gap: 17vh;
     width: 100%;
@@ -57,8 +56,6 @@ body {
     }
 
     &-title:hover {
-        overflow-wrap: break-word;
-
         color: #fff;
         text-shadow: 0 0 5px #f2626f,
                     0 0 25px #fc0303,
